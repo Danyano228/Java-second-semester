@@ -15,7 +15,7 @@ public class Main {
         System.out.println(sum / array1.length);
     }
 
-    public void second() {
+    public static void second() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите длину массива: ");
         int num = in.nextInt();
