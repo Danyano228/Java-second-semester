@@ -17,9 +17,9 @@ public class Main {
         System.out.println((double)sum / array.length);
     }
 
-    static void second() {
+    static void second(Scanner in) {
         System.out.println(" 2 )");
-        Scanner in = new Scanner(System.in);
+        //Scanner in = new Scanner(System.in);
         System.out.print("Введите длину массива: ");
         int num = in.nextInt();
 
@@ -34,7 +34,6 @@ public class Main {
             array[i] = in.nextInt();
             i++;
         }
-        in.close();
 
         int max=0, min=2147483647;
         i=0;
@@ -72,12 +71,12 @@ public class Main {
         return result;
     }
 
-    static void fifth() {
+    static void fifth(Scanner in) {
         System.out.println(" 5 )");
-        Scanner in = new Scanner(System.in);
+        //Scanner in = new Scanner(System.in);
         System.out.print("Введите число: ");
         int n = in.nextInt();
-        in.close();
+        //in.close();
 
         if (n < 0) {
             System.out.println("Неверный ввод");
@@ -87,10 +86,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         first();
-        second();
+        second(in);
         third(args);
         fourth();
-        fifth();
+        fifth(in);
+        in.close();
     }
 }
