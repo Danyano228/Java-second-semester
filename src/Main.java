@@ -19,7 +19,6 @@ public class Main {
 
     static void second(Scanner in) {
         System.out.println(" 2 )");
-        //Scanner in = new Scanner(System.in);
         System.out.print("Введите длину массива: ");
         int num = in.nextInt();
 
@@ -29,9 +28,10 @@ public class Main {
         }
 
         int[] array = new int[num];
-        int i = 0;
+        int i = 0, sum = 0;
         while (i < num) {
             array[i] = in.nextInt();
+            sum += array[i];
             i++;
         }
 
@@ -43,6 +43,8 @@ public class Main {
             i++;
         } while (i < num);
 
+        System.out.print("Сумма элементов массива: ");
+        System.out.println(sum);
         System.out.print("Наибольший элемент: ");
         System.out.println(max);
         System.out.print("Наименьший элемент: ");
@@ -73,10 +75,8 @@ public class Main {
 
     static void fifth(Scanner in) {
         System.out.println(" 5 )");
-        //Scanner in = new Scanner(System.in);
         System.out.print("Введите число: ");
         int n = in.nextInt();
-        //in.close();
 
         if (n < 0) {
             System.out.println("Неверный ввод");
@@ -87,11 +87,13 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
         first();
         second(in);
         third(args);
         fourth();
         fifth(in);
+
         in.close();
     }
 }
