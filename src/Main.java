@@ -2,7 +2,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        int[] array = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+
+        System.out.print("Сумма элементов массива: ");
+        System.out.println((int)sum);
+        System.out.print("Среднее арифметическое: ");
+        System.out.println(sum / array.length);
+    }
+}
+
+/*
+Scanner in = new Scanner(System.in);
         System.out.print("Введите длину массива: ");
         int num = in.nextInt();
 
@@ -22,5 +37,4 @@ public class Main {
         System.out.println(sum);
         System.out.print("Среднее арифметическое: ");
         System.out.println(sum / num);
-    }
-}
+ */
