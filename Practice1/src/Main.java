@@ -2,13 +2,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    static void first() {
+    static void first(Scanner in) {
         System.out.println(" 1 )");
-        int[] array = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.print("Введите длину массива: ");
+        int num = in.nextInt();
 
-        int sum=0;
-        for (int i : array) {
-            sum += i;
+        if (num <= 0) {
+            System.out.println("Неверный ввод");
+            return;
+        }
+
+        int[] array = new int[num];
+        int sum = 0;
+        for (int i = 0; i < num; i++){
+            array[i] = in.nextInt();
+            sum += array[i];
         }
 
         System.out.print("Сумма элементов массива: ");
@@ -88,7 +96,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        first();
+        first(in);
         second(in);
         third(args);
         fourth();
