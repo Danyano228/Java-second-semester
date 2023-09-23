@@ -8,6 +8,10 @@ public class TestAuthor {
     }
 
     public void toTest(Author author) {
+        String name = author.getName();
+        String email = author.getEmail();
+        System.out.println("Author's name: " + name);
+        System.out.println("Author's email: " + email);
         String poem = "";
         for (int i = 0; i < numberTest; i++) {
             poem += author.toString();

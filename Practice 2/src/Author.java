@@ -26,6 +26,6 @@ public class Author {
     }
 
     public String toString() {
-        return "The poem";
+        return "The poem ";
     }
 }
