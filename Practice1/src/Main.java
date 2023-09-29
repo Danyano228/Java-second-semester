@@ -94,14 +94,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        first(in);
-        second(in);
-        third(args);
-        fourth();
-        fifth(in);
-
-        in.close();
+        try (Scanner in = new Scanner(System.in)) {
+            first(in);
+            second(in);
+            third(args);
+            fourth();
+            fifth(in);
+        }
     }
 }
