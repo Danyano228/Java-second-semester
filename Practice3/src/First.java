@@ -9,12 +9,13 @@ public class First {
 
     public First(int length) {
         if (length <= 0) {
-            System.out.println("Wrong length!\nSet the length manually.");
+            System.out.println("Wrong length! Length = 10");
+            this.length = 10;
         }
         else {
             this.length = length;
-            generateArr();
         }
+        generateArr();
     }
 
     private void generator() {
