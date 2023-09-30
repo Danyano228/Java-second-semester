@@ -33,35 +33,6 @@ public class First {
         return 0;
     }
 
-    public int generateArr(int length) {
-        if (length <= 0) {
-            return 1;
-        }
-        this.length = length;
-        arr1 = new double[length];
-        arr2 = new double[length];
-        generator();
-        return 0;
-    }
-
-    public void clearArr() {
-        for (double elem: arr1) {
-            elem = 0.0;
-        }
-        for (double elem: arr1) {
-            elem = 0.0;
-        }
-        length = 0;
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
     public void printArr() {
         System.out.print(arr1[0]);
         for (int i = 1; i < length; i++) {
