@@ -46,8 +46,12 @@ public class Main {
         int max=0, min=2147483647;
         i=0;
         do{
-            if (array[i] > max) max = array[i];
-            else if (array[i] < min) min = array[i];
+            if (array[i] > max) {
+                max = array[i];
+            }
+            else if (array[i] < min) {
+                min = array[i];
+            }
             i++;
         } while (i < num);
 
