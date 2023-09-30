@@ -2,7 +2,9 @@ import java.lang.Math;
 import java.util.Random;
 
 public class First {
+
     private int length = 10;
+
     private double arr1[], arr2[];
 
     public First(int length) {
@@ -23,14 +25,12 @@ public class First {
         }
     }
 
-    public int generateArr() {
-        if (length <= 0) {
-            return 1;
+    public void generateArr() {
+        if (length > 0) {
+            arr1 = new double[length];
+            arr2 = new double[length];
+            generator();
         }
-        arr1 = new double[length];
-        arr2 = new double[length];
-        generator();
-        return 0;
     }
 
     public void printArr() {
@@ -47,29 +47,21 @@ public class First {
 
     public void sort() {
         double value;
+        sorting(arr1);
+        sorting(arr2);
+    }
+
+    private void sorting(double[] arr) {
         int flag = 0;
+        double value;
         while (flag < length - 1) {
-            if (arr1[flag] <= arr1[flag + 1]) {
+            if (arr[flag] <= arr[flag + 1]) {
                 flag++;
             }
             else {
-                value = arr1[flag];
-                arr1[flag] = arr1[flag + 1];
-                arr1[flag + 1] = value;
-                if (flag != 0) {
-                    flag--;
-                }
-            }
-        }
-        flag = 0;
-        while (flag < length - 1) {
-            if (arr2[flag] <= arr2[flag + 1]) {
-                flag++;
-            }
-            else {
-                value = arr2[flag];
-                arr2[flag] = arr2[flag + 1];
-                arr2[flag + 1] = value;
+                value = arr[flag];
+                arr[flag] = arr[flag + 1];
+                arr[flag + 1] = value;
                 if (flag != 0) {
                     flag--;
                 }

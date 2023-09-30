@@ -1,5 +1,7 @@
 public class Employee {
+
     private String fullname;
+
     private double salary;
 
     public Employee(String fullname, double salary) {
