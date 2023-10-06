@@ -1,4 +1,4 @@
-public class Task1 {
+public class TaskSeasons {
 
     private enum Seasons {
         Winter (-14),
@@ -10,7 +10,7 @@ public class Task1 {
         },
         Autumn (8);
 
-        public final int temperature;
+        private final int temperature;
         private Seasons(int temperature) {
             this.temperature = temperature;
         }
@@ -35,7 +35,7 @@ public class Task1 {
         }
     }
 
-    public Task1() {
+    public TaskSeasons() {
         Seasons my_season = Seasons.Summer;
         report(my_season);
         System.out.println(my_season.getDescription() + "\n");
