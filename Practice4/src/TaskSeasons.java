@@ -4,6 +4,7 @@ public class TaskSeasons {
         Winter (-14),
         Spring (10),
         Summer (20) {
+            @Override
             public String getDescription() {
                 return "Теплое время года";
             }

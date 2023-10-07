@@ -1,80 +1,24 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class TaskAtelier {
-
-    private enum Sizes {
-        XXS (32) {
-            public String getDescription() {
-                return "Детский размер";
-            }
-        },
-        XS (34),
-        S (36),
-        M (38),
-        L (40);
-
-        private final int euroSize;
-
-        private Sizes(int eurosize) {
-            this.euroSize = eurosize;
-        }
-
-        public String getDescription() {
-            return "Взрослый размер";
-        }
-
-    }
-
-    public interface MenClothing {
-        public void dressMan();
-    }
-
-    public interface WomenClothing {
-        public void dressWomen();
-    }
-
-    abstract class Clothes {
-        private int size;
-        private int cost;
-        private char color;
-    }
-
-    class TShirt extends Clothes {
-        // футболка
-        // реализовать интерфейсы
-    }
-
-    class Pants extends Clothes {
-        // штаны
-        // реализовать интерфейсы
-    }
-
-    class Skirt extends Clothes {
-        // юбка
-        // реализовать интерфейс WomenClothing
-    }
-
-    class Tie extends Clothes {
-        // галстук
-        // реализовать интерфейс MenClothing
-    }
 
     // создать массив, содержащий все типы одежды
 
-    class Atelier {
-        public void dressWomen() { // принимает массив
+    Clothes[] clothes = {
+            new TShirt(Sizes.XXS, 9999.99, "bread"),
+            new Pants(Sizes.M, 99999.999, "pink"),
+            new Skirt(Sizes.L, 999999.99, "gremlin"),
+            new Tie(Sizes.S, 9999999.99, "blue")
+    };
 
-        }
+    //        (Arrays.asList(new TShirt(32, 9999.99, "blue")), )
 
-        public void dressMan() { // принимает массив
+    public TaskAtelier() {
+        Atelier person = new Atelier();
+        person.dressMan(clothes);
+        person.dressWomen(clothes);
 
-        }
-
-        public void dressWomen() {
-            // Вывод всей женской одежды
-        }
-
-        public void dressMan() {
-            // Вывод всей мужской одежды
-        }
     }
 
 }
