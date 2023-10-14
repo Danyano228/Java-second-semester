@@ -1,4 +1,4 @@
-public class Shape {
+abstract public class Shape {
 
     public String getShape() {
         return "Figure";

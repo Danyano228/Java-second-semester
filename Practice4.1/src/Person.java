@@ -1,6 +1,6 @@
 public class Person {
-    String fullname;
-    int age;
+    String fullname = "Ivan Ivanov";
+    int age = 0;
 
     public Person() {
     }
