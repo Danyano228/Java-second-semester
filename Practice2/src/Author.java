@@ -8,7 +8,6 @@ public class Author {
         this.email = email;
         this.gender = gender;
     }
-
     public String getName() {
         return name;
     }

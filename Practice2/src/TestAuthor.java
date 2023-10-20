@@ -3,6 +3,7 @@ import java.sql.SQLOutput;
 public class TestAuthor {
     byte numberTest;
 
+
     public TestAuthor(byte numberTest) {
         this.numberTest = numberTest;
     }

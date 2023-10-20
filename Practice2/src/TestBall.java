@@ -2,6 +2,7 @@ public class TestBall {
     double x_speed, y_speed;
     int ticks = 10;
     Ball ball;
+
     public TestBall(Ball ball, double x, double y, double x_speed, double y_speed) {
         this.ball = ball;
         this.ball.x = x;
