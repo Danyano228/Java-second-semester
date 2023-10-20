@@ -8,6 +8,7 @@ public class Anime extends JFrame{
     private ImageIcon images[];
 
     private int imageIndex = 0;
+
     public Anime() {
 
         images = new ImageIcon[5];
