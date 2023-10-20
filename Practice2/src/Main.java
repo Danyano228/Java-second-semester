@@ -9,6 +9,5 @@ public class Main {
         Ball ball = new Ball();
         TestBall testBall = new TestBall(ball, 10.0, 10.0, 3.5, -2.3);
         testBall.toTest();
-
     }
 }
