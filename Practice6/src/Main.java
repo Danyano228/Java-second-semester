@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("1)");
-        MovableCircle circle = new MovableCircle(50, 50, 3,
-                                                 4, 10);
+        MovableCircle circle = new MovableCircle(50, 50,
+                                                 3, 4,
+                                                 10);
         System.out.println(circle.toString());
 
         System.out.println("\n2)");
