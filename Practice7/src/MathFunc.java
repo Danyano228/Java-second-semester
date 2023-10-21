@@ -8,7 +8,7 @@ public class MathFunc implements MathCalculable {
     }
 
     @Override
-    public double complexModul(double num, double i) {
+    public double complexModule(double num, double i) {
         return pow(num*num + i*i, 0.5);
     }
 

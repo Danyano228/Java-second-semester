@@ -8,7 +8,7 @@ public class Main {
         rectangle.speedTest();
 
         MathFunc math = new MathFunc();
-        System.out.println(math.complexModul(3.0, 0.5));
+        System.out.println(math.complexModule(3.0, 0.5));
         System.out.println(math.circumference(9.0));
     }
 }

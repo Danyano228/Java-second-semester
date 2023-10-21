@@ -4,5 +4,5 @@ public interface MathCalculable {
 
     double raiseToPower(double num, double power);
 
-    double complexModul(double num, double i);
+    double complexModule(double num, double i);
 }
