@@ -15,7 +15,7 @@ public class Main {
         rectangle.checkSpeedPoints();
 
         System.out.println("\n6, 7, 9)");
-        Printable arr[] = {new Book(), new Magazine()};
+        Printable[] arr = {new Book(), new Magazine()};
         for (int i = 0; i < 2; i++) {
             arr[i].print();
         }
