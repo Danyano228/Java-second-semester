@@ -3,7 +3,7 @@ public class MovableRectangle implements Movable {
 
     private MovablePoint bottomRight;
 
-    public MovableRectangle(int x1, int x2, int y1, int y2, int xSpeed, int ySpeed) {
+    public MovableRectangle(double x1, double x2, double y1, double y2, double xSpeed, double ySpeed) {
         topLeft = new MovablePoint(x1, y1, xSpeed, ySpeed);
         bottomRight = new MovablePoint(x2, y2, xSpeed, ySpeed);
 
