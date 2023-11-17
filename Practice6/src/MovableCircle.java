@@ -20,7 +20,7 @@ public class MovableCircle implements Movable {
 
     @Override
     public void moveUp() {
-        center.y += center.ySpeed;
+        center.moveUp();
     }
 
     @Override
