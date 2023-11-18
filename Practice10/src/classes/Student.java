@@ -2,12 +2,12 @@ package classes;
 
 
 public class Student {
-        private String name;
-        private String surname;
-        private String specialization;
-        private int curs;
-        private String group;
-        private int GPA;
+    private String name;
+    private String surname;
+    private String specialization;
+    private int curs;
+    private String group;
+    private int GPA;
 
     public Student(String name, String surname,
                    String specialization, int curs, String group,
