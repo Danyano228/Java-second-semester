@@ -85,25 +85,6 @@ public class SortingStudentsByGPA implements Comparator<Student>{
         return merge(l, r, f);
     }
 
-    /*public Student[] sortArray(Student[] arrayA, boolean f){
-        if (arrayA == null) {
-            return null;
-        }
-        if (arrayA.length < 2) {
-            return arrayA;
-        }
-        Student[] arrayB = new Student[arrayA.length / 2];
-        System.arraycopy(arrayA, 0, arrayB, 0, arrayA.length / 2);
-
-        Student[] arrayC = new Student[arrayA.length - arrayA.length / 2];
-        System.arraycopy(arrayA, arrayA.length / 2, arrayC, 0, arrayA.length - arrayA.length / 2);
-
-        arrayB = sortArray(arrayB, f);
-        arrayC = sortArray(arrayC, f);
-
-        return merge(arrayB, arrayC, f);
-    }*/
-
     public Student[] merge(Student[] s1, Student[] s2, boolean f) {
         Student[] mergeStudents = new Student[s1.length + s2.length];
         int i = 0, j = 0, k = 0;
